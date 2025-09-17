@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+@model RegisterViewModel
+
+<div class="container mt-5">
+    <div class="hero text-center">
+        <h2>Welcome to Our Car Rental Service!</h2>
+        <p>Please fill out the form below to create your account and start booking cars easily.</p>
+    </div>
+    <form asp-action="Register" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <partial name="_ProfileFormPartial" model="@Model"/>
+        <div class="row">
+            <div class="col-md-12 text-center mb-3">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+    <partial name="_PasswordValidationScriptsPartial"/>
+}

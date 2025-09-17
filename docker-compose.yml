@@ -1,0 +1,27 @@
+﻿services:
+  car-rental-system.web:
+    image: car-rental-system.web
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    build:
+      context: .
+      dockerfile: CarRentalSystem.Web/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+    environment:
+      - ConnectionStrings__AppDbContextConnection=Server=sqlserver;Database=master;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - SA_PASSWORD=YourStrong!Passw0rd
+      - ACCEPT_EULA=Y
+    ports:
+      - "1455:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+
+volumes:
+  sqlserver-data:

@@ -1,0 +1,67 @@
+.hero {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.password-strength {
+    margin-top: 5px;
+    font-size: 0.875rem;
+    display: flex;
+    visibility: hidden;
+}
+
+.password-strength span {
+    display: inline-block;
+    width: 20%;
+    height: 5px;
+    background-color: #e0e0e0;
+    margin-right: 2px;
+}
+
+.password-strength .strength-weak {
+    background-color: #c34040;
+}
+
+.password-strength .strength-medium {
+    background-color: #d3d334;
+}
+
+.password-strength .strength-strong {
+    background-color: #34ba34;
+}
+
+.custom-video {
+    width: 100%; /* íÇÎĞ ÚÑÖ ÇáÚãæÏ ßÇãá */
+    max-width: 600px; /* íÍÏÏ ÃßÈÑ ÚÑÖ */
+    height: 300px; /* íÕÛÑ ÇáØæá */
+    object-fit: cover; /* íÎáí ÇáİíÏíæ ãŞÕæÕ ÈÔßá ãÑÊÈ */
+    border-radius: 10px; /* ÒæÇíÇ äÇÚãÉ */
+    margin-left: auto; /* íÓÍÈ ÇáİíÏíæ ááíãíä */
+    margin-right: 0;
+    display: block;
+}
+
+footer {
+    background-color: #fbfbfb; /* ĞåÈí ÛÇãŞ */
+    color: #000 !important; /* áæä ÇáäÕæÕ */
+    text-align: center;
+    padding-top: 0.6rem; /* ãÓÇİÉ ãä ÇáÃÚáì */
+    padding-bottom: 0.6rem; /* ãÓÇİÉ ãä ÇáÃÓİá */
+    font-size: 1.1rem; /* ÊßÈíÑ ÇáäÕ */
+    font-weight: 600; /* ÌÚá ÇáäÕ ÃËÎä */
+    border-top: 4px solid black; /* ÎØ Úáæí ÃÓæÏ */
+}

@@ -1,0 +1,105 @@
+@model ProfileViewModel
+
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <label asp-for="FirstName">First Name</label>
+            <input asp-for="FirstName" class="form-control"/>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <label asp-for="LastName">Last Name</label>
+            <input asp-for="LastName" class="form-control"/>
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="form-group">
+            <label asp-for="UserName">Username</label>
+            <input asp-for="UserName" class="form-control"/>
+            <small class="form-text text-muted">Your unique username to display on your profile.</small>
+            <div class="text-danger">
+                <span asp-validation-for="UserName"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" type="email"/>
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="text-danger">
+                <span asp-validation-for="Email"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-group">
+            <label asp-for="PhoneNumber">Phone Number</label>
+            <input asp-for="PhoneNumber" class="form-control"/>
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <partial name="_PasswordWithConfirmationPartial" model="@Model"/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="form-group">
+            <label asp-for="DateOfBirth">Date of Birth</label>
+            <input asp-for="DateOfBirth" class="form-control" type="date"/>
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="form-group">
+            <label asp-for="DriversLicenseNumber">Driver's License Number</label>
+            <input asp-for="DriversLicenseNumber" class="form-control"/>
+            <span asp-validation-for="DriversLicenseNumber" class="text-danger"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="form-group">
+            <label asp-for="AddressLine1">Address Line 1</label>
+            <input asp-for="AddressLine1" class="form-control"/>
+            <span asp-validation-for="AddressLine1" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="AddressLine2">Address Line 2</label>
+            <input asp-for="AddressLine2" class="form-control"/>
+            <span asp-validation-for="AddressLine2" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="City">City</label>
+            <input asp-for="City" class="form-control"/>
+            <span asp-validation-for="City" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Country"></label>
+            <select asp-for="Country" class="form-control"
+                    asp-items="@(new SelectList(ViewData["Countries"] as List<string>))">
+                <option value="">Select a country</option>
+            </select>
+            <span asp-validation-for="Country" class="text-danger"></span>
+        </div>
+    </div>
+</div>

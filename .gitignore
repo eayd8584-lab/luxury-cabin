@@ -1,0 +1,38 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# ASP.NET temp files
+*.dbmdl
+*.db
+*.ldf
+*.mdf
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Backup and publish folders
+*.bak
+*.backup
+publish/
+logs/
+
+# Others
+*.swp
+*.tmp
+*.temp
+*.DS_Store
+Thumbs.db

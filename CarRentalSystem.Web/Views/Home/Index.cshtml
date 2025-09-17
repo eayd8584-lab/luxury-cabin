@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "الصفحة الرئيسية";
+}
+
+<div class="hero bg-light text-center py-5">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold">مرحبًا بك في الكبينة الفاخرة</h1>
+        <p class="lead">حلّك الشامل لتأجير السيارات بسهولة وموثوقية.</p>
+        <a class="btn btn-primary btn-lg mx-2" asp-controller="Account" asp-action="Register">تسجيل</a>
+        <a class="btn btn-outline-primary btn-lg mx-2" asp-controller="Account" asp-action="Login">تسجيل الدخول</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title h4">مجموعة واسعة من السيارات</h2>
+                    <p class="card-text">اختر من بين مجموعة متنوعة من السيارات لتلبية احتياجاتك، من الاقتصادية إلى الفاخرة.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title h4">أسعار مناسبة</h2>
+                    <p class="card-text">نقدم أسعارًا تنافسية وعروضًا خاصة لضمان حصولك على أفضل قيمة.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title h4">خدمة متميزة</h2>
+                    <p class="card-text">استمتع بخدمة عملاء عالية الجودة مع دعم على مدار الساعة وعمليات حجز سهلة.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h2>لماذا تختارنا؟</h2>
+            <p>نحن ملتزمون بتقديم أفضل تجربة لتأجير السيارات. منصتنا توفر عملية حجز سلسة، مجموعة واسعة من المركبات، ودعم عملاء متاح دائمًا.</p>
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-primary"></i> مجموعة كبيرة من المركبات</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> حجز سهل عبر الإنترنت</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> أسعار تنافسية</li>
+                <li><i class="bi bi-check-circle-fill text-primary"></i> دعم عملاء 24/7</li>
+            </ul>
+            <a class="btn btn-primary btn-lg my-4" asp-controller="Find" asp-action="Index">البحث عن مركبة</a>
+        </div>
+        <div class="col-lg-6 text-center">
+            <video autoplay muted loop playsinline class="custom-video">
+                <source src="~/car.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو
+            </video>
+        </div>
+    </div>
+</div>
