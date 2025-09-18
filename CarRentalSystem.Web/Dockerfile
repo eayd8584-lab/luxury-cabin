@@ -10,10 +10,10 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # نسخ ملفات المشاريع
-COPY CarRentalSystem.Core/ 
-COPY CarRentalSystem.Web/ 
+COPY ../CarRentalSystem.Core/ CarRentalSystem.Core/
+COPY . CarRentalSystem.Web/
 
-# استعادة الباكجات
+# استعادة الحزم
 RUN dotnet restore CarRentalSystem.Web/CarRentalSystem.Web.csproj
 
 # بناء المشروع
