@@ -10,10 +10,10 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # نسخ ملفات المشاريع
-COPY CarRentalSystem.Core/ CarRentalSystem.Core/
-COPY CarRentalSystem.Web/ CarRentalSystem.Web/
+COPY ../CarRentalSystem.Core/ CarRentalSystem.Core/
+COPY . CarRentalSystem.Web/
 
-# استعادة الباكجات
+# استعادة الحزم
 RUN dotnet restore CarRentalSystem.Web/CarRentalSystem.Web.csproj
 
 # بناء المشروع
@@ -25,7 +25,7 @@ FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish CarRentalSystem.Web.csproj -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# المرحلة النهائية: run
+# المرحلة النهائية: final
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
