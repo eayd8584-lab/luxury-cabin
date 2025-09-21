@@ -45,23 +45,23 @@
 }
 
 .custom-video {
-    width: 100%; /* íÇÎĞ ÚÑÖ ÇáÚãæÏ ßÇãá */
-    max-width: 600px; /* íÍÏÏ ÃßÈÑ ÚÑÖ */
-    height: 300px; /* íÕÛÑ ÇáØæá */
-    object-fit: cover; /* íÎáí ÇáİíÏíæ ãŞÕæÕ ÈÔßá ãÑÊÈ */
-    border-radius: 10px; /* ÒæÇíÇ äÇÚãÉ */
-    margin-left: auto; /* íÓÍÈ ÇáİíÏíæ ááíãíä */
+    width: 100%; /* ÙŠØ§Ø®Ø° Ø¹Ø±Ø¶ Ø§Ù„Ø¹Ù…ÙˆØ¯ ÙƒØ§Ù…Ù„ */
+    max-width: 600px; /* ÙŠØ­Ø¯Ø¯ Ø£ÙƒØ¨Ø± Ø¹Ø±Ø¶ */
+    height: 300px; /* ÙŠØµØºØ± Ø§Ù„Ø·ÙˆÙ„ */
+    object-fit: cover; /* ÙŠØ®Ù„ÙŠ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Ù…Ù‚ØµÙˆØµ Ø¨Ø´ÙƒÙ„ Ù…Ø±ØªØ¨ */
+    border-radius: 10px; /* Ø²ÙˆØ§ÙŠØ§ Ù†Ø§Ø¹Ù…Ø© */
+    margin-left: auto; /* ÙŠØ³Ø­Ø¨ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ Ù„Ù„ÙŠÙ…ÙŠÙ† */
     margin-right: 0;
     display: block;
 }
 
 footer {
-    background-color: #fbfbfb; /* ĞåÈí ÛÇãŞ */
-    color: #000 !important; /* áæä ÇáäÕæÕ */
+    background-color: #fbfbfb; 
+    color: #000 !important; /* Ù„ÙˆÙ† Ø§Ù„Ù†ØµÙˆØµ */
     text-align: center;
-    padding-top: 0.6rem; /* ãÓÇİÉ ãä ÇáÃÚáì */
-    padding-bottom: 0.6rem; /* ãÓÇİÉ ãä ÇáÃÓİá */
-    font-size: 1.1rem; /* ÊßÈíÑ ÇáäÕ */
-    font-weight: 600; /* ÌÚá ÇáäÕ ÃËÎä */
-    border-top: 4px solid black; /* ÎØ Úáæí ÃÓæÏ */
+    padding-top: 0.6rem; /* Ù…Ø³Ø§ÙØ© Ù…Ù† Ø§Ù„Ø£Ø¹Ù„Ù‰ */
+    padding-bottom: 0.6rem; /* Ù…Ø³Ø§ÙØ© Ù…Ù† Ø§Ù„Ø£Ø³ÙÙ„ */
+    font-size: 1.1rem; /* ØªÙƒØ¨ÙŠØ± Ø§Ù„Ù†Øµ */
+    font-weight: 600; /* Ø¬Ø¹Ù„ Ø§Ù„Ù†Øµ Ø£Ø«Ø®Ù† */
+    border-top: 4px solid black; /* Ø®Ø· Ø¹Ù„ÙˆÙŠ Ø£Ø³ÙˆØ¯ */
 }
