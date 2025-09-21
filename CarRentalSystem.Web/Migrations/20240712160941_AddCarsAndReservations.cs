@@ -56,23 +56,7 @@ namespace CarRentalSystem.Web.Migrations
                         principalTable: "Cars",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
 
-            migrationBuilder.InsertData(
-                table: "Cars",
-                columns: new[] { "Id", "ImageName", "Location", "Make", "Model", "Year" },
-                values: new object[,]
-                {
-                    { 1, "2k55x9_1280x960-min.png", "New York", "Toyota", "Camry", 2020 },
-                    { 2, "2k5559_1280x960-min.png", "Los Angeles", "Honda", "Civic", 2019 },
-                    { 3, "3keee6_1280x960-min.png", "Chicago", "Ford", "Mustang", 2021 },
-                    { 4, "5gw135_1280x960-min.png", "Houston", "Chevrolet", "Malibu", 2020 },
-                    { 5, "d5qqjo_1280x960-min.png", "Phoenix", "Nissan", "Altima", 2018 },
-                    { 6, "d5qqz3_1280x960-min.png", "Philadelphia", "BMW", "3 Series", 2021 },
-                    { 7, "gjllll_1280x960-min.png", "San Antonio", "Mercedes-Benz", "C-Class", 2019 },
-                    { 8, "w8rrj6_1280x960-min.png", "San Diego", "Audi", "A4", 2020 },
-                    { 9, "x122yv_1280x960-min.png", "Dallas", "Lexus", "ES", 2021 }
-                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Reservations_CarId",
